@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Coin Flip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="coin">
+        <div class="side-a">
+            <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M200 50C200 44.4771 195.523 40 190 40H50C44.4771 40 40 44.4771 40 50V190C40 195.523 44.4771 200 50 200H190C195.523 200 200 195.523 200 190V50ZM220 190C220 206.569 206.569 220 190 220H50C33.4314 220 20 206.569 20 190V50C20 33.4314 33.4314 20 50 20H190C206.569 20 220 33.4314 220 50V190Z"
+                    fill="currentColor" />
+                <path d="M170 110V130H70V110H170Z" fill="currentColor" />
+                <path d="M170 70V90H70V70H170Z" fill="currentColor" />
+                <path d="M140 150V170H70V150H140Z" fill="currentColor" />
+            </svg>
+        </div>
+        <div class="side-b">
+            <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M130 45C130 31.1929 141.193 20 155 20H195C208.807 20 220 31.1929 220 45V85C220 98.8071 208.807 110 195 110H155C141.193 110 130 98.8071 130 85V75H110C87.9087 75 70.0001 92.9086 70.0001 115V120C94.1897 120 114.367 137.178 119 160H185.265L163.829 142.883L176.169 127.115L220.002 162.116L220.002 177.884L176.169 212.884L163.829 197.115L185.263 180H119C114.367 202.822 94.1897 220 70.0001 220C42.3859 220 20.0001 197.614 20.0001 170C20.0001 149.497 32.3411 131.876 50.0001 124.16V115C50.0001 81.8629 76.863 55 110 55H130V45ZM155 40C152.239 40 150 42.2386 150 45V85C150 87.7614 152.239 90 155 90H195C197.762 90 200 87.7614 200 85V45C200 42.2386 197.762 40 195 40H155ZM70.0001 140C53.4316 140 40.0001 153.431 40.0001 170C40.0001 186.569 53.4316 200 70.0001 200C86.5687 200 100 186.569 100 170C100 153.431 86.5687 140 70.0001 140Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js?v=1"></script>
+</body>
+
+</html>

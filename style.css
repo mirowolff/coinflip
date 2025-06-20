@@ -1,0 +1,46 @@
+body {
+    padding-top: 50px;
+    background: #ddd;
+    perspective: 800px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#coin {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    max-width: 400px;
+    max-height: 400px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+#coin div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coin svg {
+    width: 60%;
+    height: 60%;
+    color: inherit;
+}
+
+.side-a {
+    z-index: 1;
+}
+
+.side-b {
+    transform: rotateY(180deg);
+}
